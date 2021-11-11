@@ -7,7 +7,7 @@ hours_parked = []
 frequent_parking_number = []
 timings = ("8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23")
 #questions
-print("The day of the week is represented by a number. For example, monday is 1. Accordingly answer the question")
+print("The day of the week is represented by a number. For example, monday is 1. Accordingly answer the question using numbers ranging from 1 to 7")
 time.sleep(3)
 day = int(input("What day is it?:"))
 print("ONLY INPUT THE HOUR OF ARRIVAL, EXCLUDE MINUTES. FOR EXAMPLE 15:45 becomes 15. USE 24 hour time")
