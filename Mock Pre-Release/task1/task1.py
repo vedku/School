@@ -22,3 +22,5 @@ def time_parked():
             hours_parked = int(input("You can't park for more than two hours on a Monday. How many hours did you park for?"))
     return hours_parked
 
+
+hours_parked = time_parked()
