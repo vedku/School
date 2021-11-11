@@ -20,5 +20,5 @@ def time_parked():
     while hours_parked not in [1,2,3,4,5,6,7,8]:
         while day in ["1"] and  hour_of_arrival in  ["8", "9", "10", "11", "12", "13", "14", "15"] and hours_parked >2:
             hours_parked = int(input("You can't park for more than two hours on a Monday. How many hours did you park for?"))
-    
+    return hours_parked
 
