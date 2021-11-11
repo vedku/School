@@ -1,2 +1,2 @@
--change days of the week to integers so we can ditch the while loop error statement in favour of an int(input)
+-change days of the week to integers so we can ditch the while loop error statement in favour of an int(input)\n
 -add rates for days of the week 
