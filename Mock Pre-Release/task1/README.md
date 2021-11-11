@@ -1,2 +1,3 @@
 -change days of the week to integers so we can ditch the while loop error statement in favour of an int(input)
 -add rates for days of the week 
+-max stay time per day
