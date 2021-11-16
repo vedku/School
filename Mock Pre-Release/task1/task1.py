@@ -15,10 +15,9 @@ frequent_parking_number = int(input("What is your frequent parking number? If yo
 hours_parked = int(input("How many hours did you park for?:"))
 while day ==1 and  hour_of_arrival in  [8, 9, 10, 11, 12, 13, 14, 15] and hours_parked >=2:
     hours_parked = int(input("You can't park for more than two hours on a Monday. \nHow many hours did you park for?:"))
-    while day ==2 and  hour_of_arrival in  [8, 9, 10, 11, 12, 13, 14, 15] and hours_parked >=2:
+while day ==2 and  hour_of_arrival in  [8, 9, 10, 11, 12, 13, 14, 15] and hours_parked >=2:
     hours_parked = int(input("You can't park for more than two hours on a Tuesday. \nHow many hours did you park for?:"))
 while day ==3 and  hour_of_arrival in  [8, 9, 10, 11, 12, 13, 14, 15] and hours_parked >=2:
-    price_per_hour
     hours_parked = int(input("You can't park for more than two hours on a Wednesday. \nHow many hours did you park for?:"))
 while day ==4 and  hour_of_arrival in  [8, 9, 10, 11, 12, 13, 14, 15] and hours_parked >=2:
     hours_parked = int(input("You can't park for more than two hours on a Thursday. \nHow many hours did you park for?:"))
@@ -28,3 +27,4 @@ while day ==6 and  hour_of_arrival in  [8, 9, 10, 11, 12, 13, 14, 15] and hours_
     hours_parked = int(input("You can't park for more than two hours on a Saturday. \nHow many hours did you park for?:"))
 while day ==7 and  hour_of_arrival in  [8, 9, 10, 11, 12, 13, 14, 15] and hours_parked >=8:
     hours_parked = int(input("You can't park for more than eight hours on a Sunday. \nHow many hours did you park for?:"))
+
