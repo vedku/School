@@ -1,3 +1,3 @@
--add rates for days of the week 
--max stay time per day
--while True break statement for parameters
+-charges 
+-discount
+-something with timing
