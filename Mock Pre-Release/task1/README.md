@@ -1,3 +1,4 @@
 -charges 
 -discount
 -something with timing
+-WHAT HOUR DID YOU ARRIVE AT PARAMETER
