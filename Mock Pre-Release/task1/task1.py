@@ -4,7 +4,14 @@ time_arrived = []
 hours_parked = []
 frequent_parking_number = []
 timings = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
-price = 0
+price = 1
+pph1 = 2
+pph2 = 2
+pph3 = 2
+pph4 = 2
+pph5 = 2
+pph6 = 4
+pph7 = 8
 
 #questions
 print("The day of the week is represented by a number. For example, monday is 1. Accordingly answer the question using numbers ranging from 1 to 7")
@@ -47,8 +54,24 @@ if end==number:
     print("Check digit confirmed, you are eligible for a discount!")
 
 #Calculating the charges
+if day == 1: 
+    price = (price*pph1)
+elif day == 2: 
+    price = (price*pph2)
+elif day == 3: 
+    price = (price*pph3)
+elif day == 4: 
+    price = (price*pph4)
+elif day == 4: 
+    price = (price*pph4)
+elif day == 5: 
+    price = (price*pph5)
+elif day == 6: 
+    price = (price*pph6)
+elif day == 7: 
+    price = (price*pph7)
 if time_arrived >16 and time_arrived <23 and end==number:
     price = (price*0.5)
 else:
     price = (price*0.9)
-print(price)
+print("Your price after a discount is:", price)
