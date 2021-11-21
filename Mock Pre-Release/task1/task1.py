@@ -55,23 +55,23 @@ if end==number:
 
 #Calculating the charges
 if day == 1: 
-    price = (price*pph1)
+    price = (hours_parked*pph1)
 elif day == 2: 
-    price = (price*pph2)
+    price = (hours_parked*pph2)
 elif day == 3: 
-    price = (price*pph3)
+    price = (hours_parked*pph3)
 elif day == 4: 
-    price = (price*pph4)
+    price = (hours_parked*pph4)
 elif day == 4: 
-    price = (price*pph4)
+    price = (hours_parked*pph4)
 elif day == 5: 
-    price = (price*pph5)
+    price = (hours_parked*pph5)
 elif day == 6: 
-    price = (price*pph6)
+    price = (hours_parked*pph6)
 elif day == 7: 
-    price = (price*pph7)
+    price = (hours_parked*pph7)
 if time_arrived >16 and time_arrived <23 and end==number:
     price = (price*0.5)
 else:
     price = (price*0.9)
-print("Your price after a discount is:", price)
+print("Your price after a discount is: $",price)
