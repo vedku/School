@@ -1,4 +1,2 @@
--charges 
--discount
--something with timing
--WHAT HOUR DID YOU ARRIVE AT PARAMETER
+price = (hours_parked x comparitive price per hour)
+comparitive price per hours
