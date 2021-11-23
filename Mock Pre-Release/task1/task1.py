@@ -16,7 +16,7 @@ pph7 = 8
 #questions
 print("The day of the week is represented by a number. For example, monday is 1. Accordingly answer the question using numbers ranging from 1 to 7")
 day = int(input("What day is it?:"))
-print("ONLY INPUT THE HOUR OF ARRIVAL, EXCLUDE MINUTES. FOR EXAMPLE 15:45 becomes 15. USE 24 hour time")
+print("ONLY INPUT THE HOUR OF ARRIVAL, EXCLUDE MINUTES. FOR EXAMPLE 15:45 becomes 15. USE 24 hour time. Use hours from 8-23")
 time_arrived = int(input("What time have you arrived at?:"))
 
 #validation for hours parked in a day
@@ -54,24 +54,25 @@ if end==number:
     print("Check digit confirmed, you are eligible for a discount!")
 
 #Calculating the charges
-if day == 1: 
+if day == 1:
     price = (hours_parked*pph1)
-elif day == 2: 
+elif day == 2:
     price = (hours_parked*pph2)
-elif day == 3: 
+elif day == 3:
     price = (hours_parked*pph3)
-elif day == 4: 
+elif day == 4:
     price = (hours_parked*pph4)
-elif day == 4: 
+elif day == 4:
     price = (hours_parked*pph4)
-elif day == 5: 
+elif day == 5:
     price = (hours_parked*pph5)
-elif day == 6: 
+elif day == 6:
     price = (hours_parked*pph6)
-elif day == 7: 
+elif day == 7:
     price = (hours_parked*pph7)
 if time_arrived >16 and time_arrived <23 and end==number:
     price = (price*0.5)
 else:
     price = (price*0.9)
 print("Your price after a discount is: $",price)
+
