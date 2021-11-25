@@ -73,14 +73,16 @@ elif day == 6:
     price = (hours_parked*pph6)
 elif day == 7:
     price = (hours_parked*pph7)
-if time_arrived >16 and time_arrived <23 and end==number:
+if end == number:
     price = (price*0.5)
 else:
     price = (price*0.9)
 print("Your price after a discount is: $",price)
 
 #task2|daily total of payments made for parking
-amount_paid = input("please pay here:")
-while amount_paid <= price:
+amount_paid = float(input("please pay here:"))
+while amount_paid < price:
     amount_paid = float(input("insufficient funds, pay again:"))
+if amount_paid == price:
+    print("Thank you for parking here!")
 people_who_payed = (people_who_payed + 1)
