@@ -1,1 +1,1 @@
-creating a game loop
+pseduocode and flowchart
