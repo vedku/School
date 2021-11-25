@@ -1,8 +1,9 @@
 #variables
-days = [1,2,3,4,5,6,7]
+days = [1, 2, 3, 4, 5, 6, 7]
 time_arrived = []
 hours_parked = []
 frequent_parking_number = []
+daily_total = 0
 timings = [8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23]
 price = 1
 pph1 = 2
@@ -13,6 +14,7 @@ pph5 = 2
 pph6 = 4
 pph7 = 8
 amount_paid = 0
+people_who_payed = 0
 
 #questions
 print("The day of the week is represented by a number. For example, monday is 1. Accordingly answer the question using numbers ranging from 1 to 7")
@@ -50,8 +52,8 @@ x4 = (num4*2)
 full_numbers = (x1+x2+x3+x4)
 modulo = full_numbers%11
 end = 11-modulo
-number=int(frequent_parking_number[4])
-if end==number:
+number = int(frequent_parking_number[4])
+if end == number:
     print("Check digit confirmed, you are eligible for a discount!")
 
 #Calculating the charges
@@ -78,8 +80,7 @@ else:
 print("Your price after a discount is: $",price)
 
 #task2|daily total of payments made for parking
-amount_paid = int(input("please pay here:"))
-if amount_paid <= price:
-    amount_paid = int(input("insufficient funds, pay again:"))
-
-
+amount_paid = input("please pay here:")
+while amount_paid <= price:
+    amount_paid = float(input("insufficient funds, pay again:"))
+people_who_payed = (people_who_payed + 1)
