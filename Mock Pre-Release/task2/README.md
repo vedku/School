@@ -1,1 +1,1 @@
-verify people_who_payed = people_who_payed + 1
+pseudocode and flowchart
