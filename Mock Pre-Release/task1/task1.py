@@ -65,8 +65,6 @@ elif day == 3:
     price = (hours_parked*pph3)
 elif day == 4:
     price = (hours_parked*pph4)
-elif day == 4:
-    price = (hours_parked*pph4)
 elif day == 5:
     price = (hours_parked*pph5)
 elif day == 6:
