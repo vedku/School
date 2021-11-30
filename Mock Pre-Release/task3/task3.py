@@ -18,14 +18,6 @@ pph4 = 2
 pph5 = 2
 pph6 = 4
 pph7 = 8
-#price per hour after 4pm
-ppaf1 = 2
-ppaf2 = 2
-ppaf3 = 2
-ppaf4 = 2
-ppah5 = 2
-ppah6 = 2
-ppah7 = 2
 
 #questions
 print("The day of the week is represented by a number. For example, monday is 1. Accordingly answer the question using numbers ranging from 1 to 7")
@@ -68,43 +60,45 @@ if end == number:
     print("Check digit confirmed, you are eligible for a discount!")
 
 #calculating the charges before 4pm
-if day == 1 and time_arrived <= 16:
-    price_before_4 = (hours_parked*pph1)
-elif day == 2 and time_arrived <= 16:
-    price_before_4 = (hours_parked*pph2)
-elif day == 3 and time_arrived <= 16:
-    price_before_4 = (hours_parked*pph3)
-elif day == 4 and time_arrived <= 16:
-    price_before_4 = (hours_parked*pph4)
-elif day == 5 and time_arrived <= 16:
-    price_before_4 = (hours_parked*pph5)
-elif day == 6 and time_arrived <= 16:
-    price_before_4 = (hours_parked*pph6)
-elif day == 7 and time_arrived <= 16:
-    price_before_4 = (hours_parked*pph7)
-if end == number and time_arrived <= 16:
-    price_before_4 = (price_before_4*0.5)
-elif time_arrived <= 16:
-    price_before_4 = (price_before_4*0.9)
-print("Your price before 4pm, with a discount is: $", price_before_4)
+if time_arrived <=16:
+    if day == 1 and time_arrived <= 16:
+        price_before_4 = (hours_parked*pph1)
+    elif day == 2 and time_arrived <= 16:
+        price_before_4 = (hours_parked*pph2)
+    elif day == 3 and time_arrived <= 16:
+        price_before_4 = (hours_parked*pph3)
+    elif day == 4 and time_arrived <= 16:
+        price_before_4 = (hours_parked*pph4)
+    elif day == 5 and time_arrived <= 16:
+        price_before_4 = (hours_parked*pph5)
+    elif day == 6 and time_arrived <= 16:
+        price_before_4 = (hours_parked*pph6)
+    elif day == 7 and time_arrived <= 16:
+        price_before_4 = (hours_parked*pph7)
+    if end == number and time_arrived <= 16:
+        price_before_4 = (price_before_4*0.5)
+    elif time_arrived <= 16:
+        price_before_4 = (price_before_4*0.9)
+    print("Your price before 4pm, with a discount is: $", price_before_4)
 
 #calculating the charges after 4pm
-if day == 1 and time_arrived >= 16:
-    price_after_4 = (hours_parked*ppaf1)
-elif day == 2 and time_arrived >= 16:
-    price_after_4 = (hours_parked*ppaf2)
-elif day == 3 and time_arrived >= 16:
-    price_after_4 = (hours_parked*ppaf3)
-elif day == 4 and time_arrived >= 16:
-    price_after_4 = (hours_parked*ppaf4)
-elif day == 5 and time_arrived >= 16:
-    price_after_4 = (hours_parked*ppah5)
-elif day == 6 and time_arrived >= 16:
-    price_after_4 = (hours_parked*ppah6)
-elif day == 7 and time_arrived >= 16:
-    price_after_4 = (hours_parked*ppah7)
-if end == number and time_arrived >= 16:
-    price_after_4 = (price_after_4*0.5)
-elif time_arrived >= 16:
-    price_after_4 = (price_after_4*0.9)
-print("Your price after 4pm, with a discount is: $", price_after_4)
+if time_arrived >= 16:
+    if day == 1 and time_arrived >= 16:
+        price_after_4 = (hours_parked*2)
+    elif day == 2 and time_arrived >= 16:
+        price_after_4 = (hours_parked*2)
+    elif day == 3 and time_arrived >= 16:
+        price_after_4 = (hours_parked*2)
+    elif day == 4 and time_arrived >= 16:
+        price_after_4 = (hours_parked*2)
+    elif day == 5 and time_arrived >= 16:
+        price_after_4 = (hours_parked*2)
+    elif day == 6 and time_arrived >= 16:
+        price_after_4 = (hours_parked*2)
+    elif day == 7 and time_arrived >= 16:
+        price_after_4 = (hours_parked*2)
+    if end == number and time_arrived >= 16:
+        price_after_4 = (price_after_4*0.5)
+    elif time_arrived >= 16:
+        price_after_4 = (price_after_4*0.9)
+    print("Your price after 4pm, with a discount is: $", price_after_4)
